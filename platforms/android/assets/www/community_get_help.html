@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dev4X</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="dist/styles/screen.css">
+</head>
+<body class="community">
+	<div id="frame">
+		<header>
+			<p class="header-text">Community</p>
+			<div id="profile-button">
+				<a href="my_profile.html">
+					<img src="dist/images/my_profile_icon.png" alt="My Profile">
+					<p>My Profile</p>
+				</a>
+			</div>
+		</header>
+
+		<div id="viewer">
+			<div id="banner">
+				<img src="dist/images/banner_community.png" alt="Community">
+				<p>See what your friends are<br>learning and share ideas.</p>
+			</div>
+			<ul id="sub-nav">
+				<li><a href="community.html">Stream</a>
+				<li><a href="community_help_others.html">Help Others</a>
+				<li class="active"><a href="community_get_help.html">Get Help</a>
+			</ul>
+			<!--<img width="100%" src="dist/images/community_get_help_content.png" alt="" usemap="#appmap">-->
+			<div style="background-color: #2B2B2B;text-align: center">
+				<img width="100%" src="dist/images/community_help/help_header.png">
+
+				<div style="width: 100%;margin-left: 18%;margin-right: 18%;text-align: center">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_1.png">
+					<img onclick="openCalender()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_2.png">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_3.png">
+					<img onclick="openCalculator()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_4.png">
+					<div style="clear: both"></div>
+				</div>
+
+				<div style="width: 100%;margin-left: 2%;margin-right: 2%">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_5.png">
+					<img onclick="openChrome()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_6.png">
+					<img onclick="openDrive()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_7.png">
+					<img  onclick="openMap()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_8.png">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_9.png">
+					<img onclick="openPlayStore()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_10.png">
+					<div style="clear: both"></div>
+				</div>
+
+				<div style="width: 100%;margin-left: 2%;margin-right: 2%">
+					<img onclick="openSettings()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_11.png">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_12.png">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_13.png">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_14.png">
+					<img onclick="openYoutube()" style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_15.png">
+					<img style="margin:1%;width: 14%;float: left" src="dist/images/community_help/help_16.png">
+					<div style="clear: both"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<ul id="footer">
+			<li id="home_link"><a href="index.html">Home</a>
+			<li id="learning_link"><a href="learning.html">Learning</a>
+			<li id="community_link" class="active"><a href="community.html">Community</a>
+		</ul>
+	</div>
+<script type="text/javascript">
+	function openCalender() {
+		window.JSInterface.openCalender();   
+	}
+
+	function openCalculator() {
+		window.JSInterface.openCalculator();   
+	}
+
+	function openChrome() {
+		window.JSInterface.openChrome();   
+	}
+
+	function openDrive() {
+		window.JSInterface.openDrive();   
+	}
+
+	function openYoutube() {
+		window.JSInterface.openYoutube();   
+	}
+	
+	function openMap() {
+		window.JSInterface.openMap();   
+	}
+
+	function openPlayStore() {
+		window.JSInterface.openPlayStore();
+	}
+
+	function openSettings() {
+		window.JSInterface.openSettings();
+	}
+</script>
+</body>
+</html>
