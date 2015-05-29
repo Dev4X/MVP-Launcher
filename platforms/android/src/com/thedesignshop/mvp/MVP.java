@@ -64,61 +64,9 @@ public class MVP extends CordovaActivity
 		}
 
 		@JavascriptInterface
-		public void openCalender() {
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.android.calendar");
+		public void openApp(String packageName) {
+			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage(packageName);
 			getActivity().getApplicationContext().startActivity(i);
 		}
-		
-		@JavascriptInterface
-		public void openCalculator() {
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.sec.android.app.popupcalculator");
-			getActivity().getApplicationContext().startActivity(i);
-			
-		}
-		
-		@JavascriptInterface
-		public void openChrome() {
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.android.chrome");
-			getActivity().getApplicationContext().startActivity(i);
-		}
-		
-		@JavascriptInterface
-		public void openDrive() {
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.google.android.apps.docs");
-			getActivity().getApplicationContext().startActivity(i);
-			
-		}
-		
-		@JavascriptInterface
-		public void openYoutube() {
-			
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.google.android.youtube");
-			getActivity().getApplicationContext().startActivity(i);
-					
-		}
-		
-		@JavascriptInterface
-		public void openMap() {
-					
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.google.android.apps.maps");
-			getActivity().getApplicationContext().startActivity(i);
-			
-		}
-		
-		@JavascriptInterface
-		public void openPlayStore() {
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.android.vending");
-			getActivity().getApplicationContext().startActivity(i);
-			
-		}
-		
-		@JavascriptInterface
-		public void openSettings() {
-			Intent i = getActivity().getApplicationContext().getPackageManager().getLaunchIntentForPackage("com.android.settings");
-			getActivity().getApplicationContext().startActivity(i);
-			
-		}
-
-		
 	}
 }
